@@ -1,8 +1,8 @@
 .idea
 node_modules
-build
+./build
 .nyc_output
-__test__
-decorator
+./__test__
+./decorator
 *.js
 *.d.ts
