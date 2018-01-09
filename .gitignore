@@ -1,0 +1,8 @@
+.idea
+node_modules
+build
+.nyc_output
+__test__
+decorator
+*.js
+*.d.ts

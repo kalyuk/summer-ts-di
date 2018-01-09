@@ -1,0 +1,32 @@
+{
+  "name": "summer-ts-di",
+  "version": "0.0.2",
+  "dependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.5.2",
+    "reflect-metadata": "^0.1.10",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "@types/mocha": "^2.2.45",
+    "@types/chai": "^4.0.10",
+    "chai": "^4.1.2",
+    "nodemon": "^1.14.3",
+    "nyc": "^11.4.1",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.8.0"
+  },
+  "directories": {
+    "lib": "build"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Dmitry Kalyuk <dmitry@kalyuk.ru>",
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "tsc",
+    "test": "nyc --extension=.ts --lines 60 --per-file mocha --require ts-node/register ./src/**/__tests__/*.ts ",
+    "test:watch": "mocha --require ts-node/register ./src/**/__tests__/*.ts --watch --watch-extensions ts"
+  }
+}
