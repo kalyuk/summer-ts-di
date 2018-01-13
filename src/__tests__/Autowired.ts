@@ -27,4 +27,5 @@ describe('Autowired', () => {
     assert(state);
 
   });
+
 });

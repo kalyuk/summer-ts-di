@@ -1,13 +1,11 @@
 {
   "name": "summer-ts-di",
-  "version": "0.0.2",
-  "dependencies": {
+  "version": "0.0.3",
+  "devDependencies": {
     "@types/core-js": "^0.9.43",
     "@types/node": "^8.5.2",
     "reflect-metadata": "^0.1.10",
-    "typescript": "^2.6.2"
-  },
-  "devDependencies": {
+    "typescript": "^2.6.2",
     "mocha": "^4.0.1",
     "@types/mocha": "^2.2.45",
     "@types/chai": "^4.0.10",
